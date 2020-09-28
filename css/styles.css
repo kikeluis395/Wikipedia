@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container-title{
+    width: 500px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.main-picture {
+    width: 200px;
+    height: 183px;
+    margin: auto;
+    margin-top: 85px;
+}
+.main-picture img{
+    width: 100%;
+}
+.main-content {
+    width: 550px;
+    height: 325px;
+    position: relative;
+    margin: auto;
+}
+.content {
+    position: absolute;
+    text-align: center;
+    font-weight: bold ;
+    width: 156px;
+}
+.content a {
+    text-decoration: none;
+    color: #36c;
+}
+.content p {
+    color:#54595d;
+    font-size: 12px;
+    margin-top:5px;
+    font-weight: normal;
+}
+.c1 {
+    top:0;
+    right: 60%;
+}
+.c2 {
+    top:0;
+    left: 60%;
+}
+.c3 {
+    top:20%;
+    right: 70%;
+}
+.c4 {
+    top:20%;
+    left: 70%;
+}
+.c5 {
+    top:40%;
+    right:72%;
+}
+.c6 {
+    top:40%;
+    left:72%;
+}
+.c7 {
+    top:60%;
+    right:70%;
+}
+.c8 {
+    top:60%;
+    left:70%;
+}
+.c9 {
+    top:80%;
+    right:60%;
+}
+.c10 {
+    top:80%;
+    left:60%;
+}
+
+.form {
+    width: 450px;
+    height: 45px;
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.container-search {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5px 10px;
+    border-radius: 2px 0 0 2px;
+    border:1px solid #a2a9b1 ;
+}
+.input-search {
+    width: 100%;
+    height: 35px;
+    border:none;
+    outline: none;
+}
+.option {
+    border:none;
+    color: #a7a9aa;
+    font-size: 12px;
+}
+.search{
+    background-color: #36c;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    width: 55px;
+    height: 45px;
+    border-radius: 0 2px 2px 0;
+}
+.language {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.container-main-language {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    background-color: #f8f9fa;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+}
+.line {
+    width:500px;
+    height: 1px;
+    background-color: #c8ccd1;
+}
+.main-language {
+    width: 260px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #a2a9b1;
+}
+.main-language span {
+    font-weight: bold;
+    color: #36c;
+    font-size: 14px;
+    margin: 10px;
+}
+.hr {
+    width: 95%;
+    height: 1px;
+    margin: auto;
+    background-color: #c8ccd1;
+}
+.main {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding: 41px 12px 12px;
+    font-size: 13px;
+}
+.side-bar {
+    width: 35%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-side {
+    width: 100%;
+    display: flex;
+    max-width:350px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.content-side img {
+    margin-bottom:30px;
+    height: 50px;
+}
+.side-bar .apps {
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+.side-bar .apps figure {
+    flex-wrap: wrap;
+    padding-left: 50px;
+    margin-top: 20px;
+}
+.content-side p {
+    padding-left:15px ;
+    color: #54595d;
+
+}
+.content-side .strong {
+    font-weight: bold;
+    font-size: 13px;
+
+}
+.main-items {
+    width: 65%;
+    display: grid;
+    grid-template:90px 90px  90px  90px  / auto auto auto ;
+}
+.item a {
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+}
+.item div {
+    margin-left: 15px;
+
+}
+.item span {
+    color: #36c;
+}
+.item p {
+    max-width: 180px;
+    padding-top:5px;
+    color:#54595d;
+    white-space: normal;
+}
+.end {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    color:#54595d;
+}
+.end a{
+    text-decoration: none;
+    color:#36c;
+}
+.end{
+    text-align: center;
+}
+@media(max-width:780px){
+    .main{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .side-bar {
+        width: 100%;
+    }
+    .content-side{
+        display:flex;
+        max-width: 100vh;
+        flex-direction: column;
+        text-align: center;
+    }
+    .side-bar .apps figure {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .side-bar .apps {
+        margin-bottom: 50px;
+    }
+    .main-items {
+        width:100vw;
+    }
+}
